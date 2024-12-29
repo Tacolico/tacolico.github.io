@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<!--
+Astral by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<title>Vicente</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<!--
+Javascrip
+1-Disable right click
+-->
+
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel='stylesheet' href="assets/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body onselectstart="return false" ondragstart="return false" class="is-preload">
+
+<!-- Nav -->
+<nav id="nav">
+ <a onclick="scrollToSection('home')"    class="ref0 icon solid fa-address-card"><p>Vicente</p></a>
+ <a onclick="scrollToSection('videos')"  class="ref1 icon solid fa-video"><p>Videos</p></a>        
+ <a onclick="scrollToSection('work')"    class="ref2 icon solid fa-camera"><p>Fotos</p></a>        
+ <a onclick="scrollToSection('contact')" class="ref3 icon solid fa-comment"><p>Estudios</p></a>    
+</nav>
+
+<!-- Wrapper-->
+<div id="wrapper">
+
+<!-- Main -->
+<div id="main">
+
+<!-- Me -->
+<div class="section-title posfixed">
+<h1 onclick="scrollToSection('home')">Vicente</h1>
+</div>
+
+<div class="section-title-fixed oone">
+
+<div class="hide-ref-div hide-ref">
+<a href="mailto:vicedh@aol.com">vicedh@aol.com</a> 
+</div>
+
+<div class="hide-ref-div">
+<a href="mailto:vicedh@aol.com"><i class="fa fa-at"></i></a> 
+</div>
+
+</div>
+
+<div class="section-title-fixed ttwo"><h1>Videos</h1></div>
+<div class="section-title-fixed tthree"><h1>Fotos</h1></div>
+<div class="section-title-fixed ffour"><h1>Estudios</h1></div>
+
+
+
+<div id="home" class="section-title sub one"></div>
+<section class="panel intro" >
+<img class="pic" src="images/out-05.webp" /></a>
+<header>
+<h1>Ingeniero mecánico</h1>
+<p>Durante mi formación como ingeniero, desarrollé habilidades en áreas distintas a mi profesión. Aprendí cómo crear páginas web y cómo tomar fotografías.</p>
+<p>Esta página web es el resultado de mi aprendizaje y actualmente investigo el área de la computación para utilizar la inteligencia artificial en áreas de la ingeniería.</p>
+<p>Específicamente, en la comparación de bombas de agua, al automatizar la extracción de sus características detalladas en archivos PDF, tales como: caudal, altura, potencia eléctrica, diámetros, etc.</p>
+</header>
+</section>
+
+<!-- Videos -->
+<div id="videos" class="section-title sub two"><h1>Videos</h1></div>
+<section class="panel" >
+
+<div class="image-container">
+
+<video id="video" class="img-fluid-vid" controls>
+<source src="images/ArrastreVideo05.webm" type="video/webm">
+Your browser does not support the video</video>
+
+<video id="video" class="img-fluid-vid-por" controls>
+<source src="images/mili.webm" type="video/webm">
+Your browser does not support the video</video>
+</section>
+
+<!-- Work -->
+<div id="work" class="section-title sub three"><h1>Fotos</h1></div>
+<section class="panel">
+
+
+<div class="image-container">
+<img src="images/out-01.webp" class="img-fluid">
+<img src="images/out-02.webp" class="img-fluid">
+<img src="images/out-03.webp" class="img-fluid">
+<img src="images/out-06.webp" class="img-fluid-por">
+</div>
+
+</section>
+<!-- Contact -->
+<div id="contact" class="section-title sub four"><h1>Estudios</h1></div>
+<section class="panel text" style="height: 100vh;">
+<h2>Ingeniería Civil Mecánica</h2>
+<h3>Universidad de La Serena</h3>
+</section>
+<div class="section-title sub">
+<h1>La Serena</h1>
+</div>
+
+</div>
+
+</div>
+<script>
+window.onscroll = function() {
+  stickyFunction(blockOne, 'stickyIndex',positionTwo);
+  stickyFunction(blockTwo, 'sticky',positionTwo);
+  stickyFunction(blockThree, 'sticky',positionThree);
+  stickyFunction(blockFour, 'sticky',positionFour);
+
+  stickyFunctionIndex(IndexTwo, 'ref',positionTwo,positionThree);
+  stickyFunctionIndex(IndexThree, 'ref',positionThree,positionFour);
+  stickyFunction(IndexFour, 'ref',positionFour);
+  stickyFunction(IndexOne, 'refIndex',positionTwo);
+};
+
+var IndexOne = document.querySelector('#nav a.ref0');
+var IndexTwo = document.querySelector('#nav a.ref1');
+var IndexThree = document.querySelector('#nav a.ref2');
+var IndexFour = document.querySelector('#nav .ref3');
+
+var blockOne = document.querySelector('.section-title-fixed.oone');
+
+var blockTwo = document.querySelector('.section-title-fixed.ttwo');
+var positionTwo = document.querySelector('.section-title.sub.two');
+
+var blockThree = document.querySelector('.section-title-fixed.tthree');
+var positionThree = document.querySelector('.section-title.sub.three');
+
+var blockFour = document.querySelector('.section-title-fixed.ffour');
+var positionFour = document.querySelector('.section-title.sub.four');
+
+function stickyFunction(element, className, pospos) {
+    var stickyTop = pospos.offsetTop;
+  if (window.pageYOffset + 25 > stickyTop) {
+    element.classList.add(className);
+  } else {
+    element.classList.remove(className);
+  }
+}
+
+function stickyFunctionIndex(element, className, posposOne,posposTwo) {
+    var stickyTop = posposOne.offsetTop;
+    var stickyBot = posposTwo.offsetTop;
+        if (window.pageYOffset + 25 > stickyTop && window.pageYOffset + 25 < stickyBot) {
+    element.classList.add(className);
+  } else {
+    element.classList.remove(className);
+  }
+}
+
+
+
+</script>
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script>
+  function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+<script>
+<!--
+var mensagem="";
+function clickIE() {if (document.all) {(mensagem);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(mensagem);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+// -->    
+</script>
+
