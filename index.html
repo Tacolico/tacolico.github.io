@@ -13,14 +13,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <!--
 Javascrip
 1-Disable right click
+<body onselectstart="return false" ondragstart="return false" class="is-preload">
 -->
 
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel='stylesheet' href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/slider_styles.css" />
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/6.7.0/css/font-awesome.min.css'>
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body onselectstart="return false" ondragstart="return false" class="is-preload">
 
 <!-- Nav -->
 <nav id="nav">
@@ -72,7 +73,19 @@ Javascrip
 <div id="videos" class="section-title sub two"><h1>Minería</h1></div>
 <section class="panel" >
 
-<div class="image-container"><img src="images/out-01.webp" class="img-fluid"></div>
+<div class="slideshow-container">
+<div class="mySlides fade mySlides1"><img src="images/toneladas_cobre_persona.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides1"><img src="images/toneladas_cobre_año.webp" style="width:100%"></div>
+<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot do1" onclick="currentSlide1(1)"></span>
+<span class="dot do1" onclick="currentSlide1(2)"></span>
+</div> 
+
+<header>
 <p>
 Producción promedio por trabajador (contratistas + trabajadores) en distintas minas de gran escala, considerando cobre en cátodos y concentrado de cobre. Un trabajador produce 75 toneladas al año de cobre en gran minería, variando debido a la existencia de proyectos de expansión, falta de mineral o huelgas de trabajadores.
 </p>
@@ -80,9 +93,45 @@ Producción promedio por trabajador (contratistas + trabajadores) en distintas m
 Se elabora esta gráfica porque es de interés conocer la diferencia en producción entre la minería de gran y pequeña escala, esperando encontrar indicios de un uso más eficiente de maquinaria al incluir y comparar la producción de cobre por persona en la pequeña minería.
 </p>
 <p>
-Datos obtenidos en:
-https://www.cmfchile.cl/portal/principal/613/w3-propertyname-815.html (Comisión para el mercado financiero)
+Datos obtenidos en: Comisión para el mercado financiero.</a>
 </p>
+</header>
+
+<div class="slideshow-container">
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Cobre.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Oro.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Molibdeno.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Plata.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Aluminio.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Niquel.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Estano.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Plomo.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides2"><img src="images/precio_metal_Zinc.webp" style="width:100%"></div>
+<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot dot2" onclick="currentSlide2(1)"></span>
+<span class="dot dot2" onclick="currentSlide2(2)"></span>
+<span class="dot dot2" onclick="currentSlide2(3)"></span>
+<span class="dot dot2" onclick="currentSlide2(4)"></span>
+<span class="dot dot2" onclick="currentSlide2(5)"></span>
+<span class="dot dot2" onclick="currentSlide2(6)"></span>
+<span class="dot dot2" onclick="currentSlide2(7)"></span>
+<span class="dot dot2" onclick="currentSlide2(8)"></span>
+<span class="dot dot2" onclick="currentSlide2(9)"></span>
+</div> 
+
+<header>
+<p>
+Precio obvervado de distintos metales en Chile.
+</p>
+<p>
+Datos obtenidos en: Bolsa de Metales de Londres y Banco central de Chile.
+</p>
+</header>
+
 </section>
 
 <!-- Work -->
@@ -90,12 +139,32 @@ https://www.cmfchile.cl/portal/principal/613/w3-propertyname-815.html (Comisión
 <section class="panel">
 
 
-<div class="image-container">
-<img src="images/out-01.webp" class="img-fluid">
-<img src="images/out-02.webp" class="img-fluid">
-<img src="images/out-03.webp" class="img-fluid">
-<img src="images/out-06.webp" class="img-fluid-por">
+<div class="slideshow-container">
+<div class="mySlides fade mySlides3"><img src="images/image_4_6.webp" style="width:100%"></div>
+<div class="mySlides fade mySlides3"><img src="images/E43_Config=(3)_Rev=(60)%_Data=(50.0)_fft_(0)_axis_(y).webp" style="width:100%"></div>
+<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides3(1)">&#10095;</a>
 </div>
+<br>
+<div style="text-align:center">
+<span class="dot do3" onclick="currentSlide3(1)"></span>
+<span class="dot do3" onclick="currentSlide3(2)"></span>
+</div> 
+
+<header>
+<p>
+Como todo en la vida, los rodamientos también fallan y, dependiendo del peso que soporten, pueden ocasionar daños considerables en la maquinaria, lo que lleva a grandes tiempos y costos de reparación. Para evitar estos eventos, los ingenieros mecánicos realizan predicciones que permiten tomar medidas correctivas, como por ejemplo una detención de la maquinaria.
+</p>
+<p>
+Las predicciones se realizan al analizar el movimiento oscilatorio de los rodamientos o vibraciones, en busca de patrones de movimiento que indiquen una degradación en el funcionamiento de los equipos, utilizando técnicas como la transformada de Fourier para encontrar estos patrones.
+<p>
+<p>
+Datos obtenidos en: investigación DOI 10.3390/s19194342
+</p>
+</header>
+
+
+
 
 </section>
 <!-- Contact -->
@@ -170,6 +239,9 @@ function stickyFunctionIndex(element, className, posposOne,posposTwo) {
 
 
 <!-- Scripts -->
+<script src="assets/js/slider_script1.js"></script>
+<script src="assets/js/slider_script2.js"></script>
+<script src="assets/js/slider_script3.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
