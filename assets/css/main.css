@@ -393,6 +393,12 @@ font-weight: 900;
 transform: translateY(-2em);
 }
 
+#nav p:hover  
+{
+cursor: pointer;
+}
+
+
 #nav a:hover  
 {
 opacity: 1.0;
