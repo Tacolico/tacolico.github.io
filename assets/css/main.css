@@ -155,6 +155,17 @@ header
 margin: 0 0 1.5em 0;
 }
 
+.color-box {
+            background-color: #ff5200; /* Yellowish color */
+            padding-left: 2vw;
+            width:100%;
+            display: inline-block;
+        }
+.color-box header {
+margin: 0 0 0 0;
+        }
+
+
 header > p 
 {
 margin: 0 0 0 0;
@@ -278,35 +289,35 @@ justify-content: center;
 gap:2%;
 align-items: center;
 flex-wrap: wrap;
-margin-bottom:-4vh;
+/*margin-bottom:-4vh;*/
 }
 
 .img-fluid-por
 {       
 width: 49%;  
 height: auto;
-margin-bottom:4vh;
+/*margin-bottom:4vh;*/
 }
 
 .img-fluid
 {
 width: 100%;  
 height: auto;   
-margin-bottom:4vh;
+/*margin-bottom:4vh;*/
 }
 
 .img-fluid-vid-por
 {
 width: 49%;  
 height: auto;   
-margin-bottom:4vh;
+/*margin-bottom:4vh;*/
 }
 
 .img-fluid-vid
 {
 width: 100%;  
 height: auto;   
-margin-bottom:4vh;
+/*margin-bottom:4vh;*/
 }
 
 .image {
@@ -617,6 +628,10 @@ padding-right:0vw;
 .section-title.sub > h1 {
 padding-right:0vw;
 }
+#main > .panel header {
+padding: 0vh 2vw 0vh 2vw;
+text-align: left;
+}
 
 #main > .panel.intro {
 -moz-flex-direction: column;
@@ -635,16 +650,9 @@ width: 100%;
 max-height: 100%;
 }
 
-#main > .panel header {
-padding: 4vh 2vw 4vh 2vw;
-text-align: left;
-}
 #main > .panel.intro header {
 padding: 4vh 2vw 4vh 2vw;
 text-align: left;
 }
 
-#main > .panel header p {
-margin: 0 0 0 0;
-}
 }
