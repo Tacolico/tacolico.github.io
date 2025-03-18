@@ -211,7 +211,7 @@ opacity:0;
 {
 width:100vw;
 padding-left:2vw ;
-padding-right:47vw ;
+padding-right:46vw ;
 text-align: right;
 }
 
@@ -591,12 +591,8 @@ width:100%;
 .img-fluid-por {
 width:100%;
 }
-.section-title-fixed.oone > .hide-ref {
-display: none;
-}
-
 .section-title-fixed.oone > .hide-ref-div {
-padding-right:3.5vw;
+padding-right:0vw;
 }
 
 #main > .panel.text {
@@ -640,11 +636,15 @@ max-height: 100%;
 }
 
 #main > .panel header {
-padding: 2.75em 2em 2.5em 2em;
+padding: 4vh 2vw 4vh 2vw;
+text-align: left;
+}
+#main > .panel.intro header {
+padding: 4vh 2vw 4vh 2vw;
 text-align: left;
 }
 
 #main > .panel header p {
-margin: 0.25em 0 0 0;
+margin: 0 0 0 0;
 }
 }
