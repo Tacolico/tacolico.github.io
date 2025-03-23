@@ -1,40 +1,43 @@
 * {box-sizing:border-box}
 
+.slideshow-container img {
+    width:100%;
+    border: 8px solid #FF5200; 
+    padding: 8px;
+}
+.invert img {
+    border: 8px solid #00ADFF; 
+    filter: invert(1);
+}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-bottom: 0;
 }
 .mySlides {
   display: none;
 }
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(255, 82, 0, 0.3);
+  background-color: #FF5200;
 }
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.dot_style{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    text-align: center;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(255,82,0,1);
+  background-color: #FFFFFF;
+  color: #FF5200;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -43,21 +46,9 @@
   background-color: #FFFFFF;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active {
   background-color: #FF5200;
-
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 0.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}

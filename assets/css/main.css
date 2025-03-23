@@ -226,10 +226,8 @@ padding-right:46vw ;
 text-align: right;
 }
 
-.section-title-fixed > .hide-ref-div > a {
+.section-title > a {
     text-decoration: none;
-    background-color: #007bff; 
-    border-radius: 20px; 
     display: inline-flex;
     align-items: center;
     height: 1.25em;
@@ -237,7 +235,9 @@ text-align: right;
     padding-left: 0.3em;
     transition: background-color 0.3s ease; 
 }
-
+.section-title > a:hover {
+    background-color: #007bff; 
+}
 .section-title-fixed > .hide-ref-div > a:hover {
 background-color: #0056b3; /* Darker shade or different color on hover */
 }
@@ -336,6 +336,7 @@ display: inline-block;
 
 .icon 
 {
+width:3em;
 position: relative;
 text-decoration: none;
 }
@@ -399,7 +400,7 @@ transition: opacity .25s ease-in-out;
 #nav a > p {
 text-align: left;
 font-size: 0.5em;
-padding-left:6vw;
+padding-left:4em;
 font-weight: 900;
 transform: translateY(-2em);
 }
