@@ -361,13 +361,13 @@ font-size: 1em;
 {
 background-color:#FF5200; 
 width:20vw; 
-max-width:100%; 
-min-width:10%; 
 height:100%;
 justify-content: flex-start;
-padding-top: 4vh;
+align-items: center;
+text-align: left;
+flex-direction: column;
+padding-top: 5.5vh;
 z-index: 9999;
-text-orientation: upright;
 position: fixed;
 /* default 
 white-space: wrap;
@@ -376,11 +376,9 @@ display: inline;
 }
 
 #nav a {
-    white-space: nowrap;
     text-decoration: none;
     display: inline-flex;
 text-align: center;
-width: 100%;
 font-size: 1.25em;
 margin: 0em 0em 2.5em 0em;
 opacity: 0.35;
