@@ -25,10 +25,10 @@ Javascrip
 
 <!-- Nav -->
 <nav id="nav">
- <a onclick="scrollToSection('home')"    class="ref0 icon solid fa-user"><p>Presentación</p></a>
- <a onclick="scrollToSection('videos')"  class="ref1 icon solid fa-image"><p>Minería</p></a>        
- <a onclick="scrollToSection('work')"    class="ref2 icon solid fa-toolbox"><p>Mecánica</p></a>        
- <a onclick="scrollToSection('contact')" class="ref3 icon solid fa-book"><p>Estudios</p></a>    
+ <a onclick="scrollToSection('home')"    class="ref0 icon fa-user">Presentación</a>
+ <a onclick="scrollToSection('videos')"  class="ref1 icon fa-image">Minería</a>        
+ <a onclick="scrollToSection('work')"    class="ref2 icon fa-toolbox">Mecánica</a>        
+ <a onclick="scrollToSection('contact')" class="ref3 icon fa-book">Estudios</a>    
 </nav>
 
 <!-- Wrapper-->
@@ -39,18 +39,12 @@ Javascrip
 
 <!-- Me -->
 <div class="section-title posfixed">
-<a href="mailto:vicedh@aol.com">vicedh@aol.com</a> 
+<a href="tel:+56997714081" class="icon icon2 fa-phone">9 9771 4081</a> 
 </div>
 
 <div class="section-title-fixed oone">
-
-<div class="hide-ref-div hide-ref">
-</div>
-
-<div class="hide-ref-div">
-<a href="mailto:vicedh@aol.com"><i class="fa fa-at"></i></a> 
-</div>
-
+<div class="hide-ref-div hide-ref"></div>
+<div class="hide-ref-div"></div>
 </div>
 
 <div class="section-title-fixed ttwo"><h1>Minería</h1></div>
@@ -80,7 +74,6 @@ Ingeniero civil mecánico con interés en el área de mantenimiento, esperando a
 <div class="mySlides fade mySlides1 invert"><img src="images/toneladas_cobre_año.webp" ></div>
 </div>
 <div class="dot_style">
-<div><a class="prev" onclick="plusSlides1(-1)">&#10094;</a></div>
 <div>
 <span class="dot dot1" onclick="currentSlide1(1)"></span>
 <span class="dot dot1" onclick="currentSlide1(2)"></span>
@@ -113,7 +106,6 @@ Datos obtenidos en: Comisión para el mercado financiero.</a>
 <div class="mySlides fade mySlides2 invert"><img src="images/precio_metal_Zinc.webp" ></div>
 </div>
 <div class="dot_style">
-<div><a class="prev" onclick="plusSlides2(-1)">&#10094;</a></div>
 <div>
 <span class="dot dot2" onclick="currentSlide2(1)"></span>
 <span class="dot dot2" onclick="currentSlide2(2)"></span>
@@ -127,7 +119,6 @@ Datos obtenidos en: Comisión para el mercado financiero.</a>
 </div>
 <div><a class="next" onclick="plusSlides2(1)">&#10095;</a></div>
 </div> 
-
 <header>
 <p>
 Precio obvervado de distintos metales en Chile.
@@ -138,11 +129,9 @@ Datos obtenidos en: Bolsa de Metales de Londres y Banco central de Chile.
 </header>
 
 </section>
-
 <!-- Work -->
 <div id="work" class="section-title sub three"><h1>Mecánica</h1></div>
 <section class="panel">
-
 <div class=color-box><header><h2>Evaluación de vibraciones</h2></header></div>
 <div class="slideshow-container">
     <div class="img-fluid-vid">
@@ -152,7 +141,6 @@ Datos obtenidos en: Bolsa de Metales de Londres y Banco central de Chile.
     </video>
 </div> 
 </div> 
-
 <header>
 <p>
 El mantenimiento predictivo de máquinas permite preparar repuestos, permisos y mano de obra antes de una falla, reduciendo los tiempos fuera de servicio después de una falla.
@@ -186,64 +174,10 @@ En la mayoría de los casos, estas evaluaciones se realizan por medio de computa
 <p></p>
 </section>
 
-<div class="section-title sub">
+<!-- page end -->
+<div class="section-title sub"></div>
 </div>
-
 </div>
-
-</div>
-<script>
-window.onscroll = function() {
-  stickyFunction(blockOne, 'stickyIndex',positionTwo);
-  stickyFunction(blockTwo, 'sticky',positionTwo);
-  stickyFunction(blockThree, 'sticky',positionThree);
-  stickyFunction(blockFour, 'sticky',positionFour);
-
-  stickyFunctionIndex(IndexTwo, 'ref',positionTwo,positionThree);
-  stickyFunctionIndex(IndexThree, 'ref',positionThree,positionFour);
-  stickyFunction(IndexFour, 'ref',positionFour);
-  stickyFunction(IndexOne, 'refIndex',positionTwo);
-};
-
-var IndexOne = document.querySelector('#nav a.ref0');
-var IndexTwo = document.querySelector('#nav a.ref1');
-var IndexThree = document.querySelector('#nav a.ref2');
-var IndexFour = document.querySelector('#nav .ref3');
-
-var blockOne = document.querySelector('.section-title-fixed.oone');
-
-var blockTwo = document.querySelector('.section-title-fixed.ttwo');
-var positionTwo = document.querySelector('.section-title.sub.two');
-
-var blockThree = document.querySelector('.section-title-fixed.tthree');
-var positionThree = document.querySelector('.section-title.sub.three');
-
-var blockFour = document.querySelector('.section-title-fixed.ffour');
-var positionFour = document.querySelector('.section-title.sub.four');
-
-function stickyFunction(element, className, pospos) {
-    var stickyTop = pospos.offsetTop;
-  if (window.pageYOffset + 300 > stickyTop) {
-    element.classList.add(className);
-  } else {
-    element.classList.remove(className);
-  }
-}
-
-function stickyFunctionIndex(element, className, posposOne,posposTwo) {
-    var stickyTop = posposOne.offsetTop;
-    var stickyBot = posposTwo.offsetTop;
-        if (window.pageYOffset + 300 > stickyTop && window.pageYOffset + 300 < stickyBot) {
-    element.classList.add(className);
-  } else {
-    element.classList.remove(className);
-  }
-}
-
-
-
-</script>
-
 
 <!-- Scripts -->
 <script src="assets/js/slider_script1.js"></script>
@@ -252,24 +186,5 @@ function stickyFunctionIndex(element, className, posposOne,posposTwo) {
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
-
-<script>
-  function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
-
-<script>
-<!--
-var mensagem="";
-function clickIE() {if (document.all) {(mensagem);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(mensagem);return false;}}}
-if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-document.oncontextmenu=new Function("return false")
-// -->    
-</script>
-
+<script src="assets/js/click_to_scroll.js"></script>
+<script src="assets/js/replace_top_bar.js"></script>

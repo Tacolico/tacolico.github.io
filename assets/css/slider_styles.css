@@ -10,9 +10,8 @@
     filter: invert(1);
 }
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin-bottom: 0;
+  width: 100%;
+  margin-bottom: 4px;
 }
 .mySlides {
   display: none;

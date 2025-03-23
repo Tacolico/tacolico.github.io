@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
-
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, i, article, header, nav, section, video 
 {
 margin: 0;
@@ -52,7 +50,7 @@ transition: none !important;
 
 body, input, textarea, select 
 {
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Liberation', monospace;
 font-weight: 300;
 color: #ffffff;
 font-size: 15pt;
@@ -157,7 +155,7 @@ margin: 0 0 1.5em 0;
 
 .color-box {
             background-color: #ff5200; /* Yellowish color */
-            padding-left: 2vw;
+            padding-left: 8px;
             width:100%;
             display: inline-block;
         }
@@ -191,7 +189,6 @@ flex-wrap: nowrap;
 height: 3em;
 position: relative;
 padding-left:2vw ;
-padding-right:2vw ;
 }
 
 .section-title.posfixed
@@ -202,13 +199,14 @@ z-index:700;
 
 .section-title.sub > h1
 {
-width:100vw;
-padding-right:25vw;
+width:750pt;
+padding-right:4vw ;
 text-align: right;
 }
 
 .section-title-fixed
 {
+width:80vw;
 display: flex;
 background-color:#FF5200; 
 align-items: center;
@@ -216,7 +214,10 @@ flex-wrap: nowrap;
 height: 3em;
 position: fixed;
 opacity:0;
+padding-left:2vw;
 }
+
+
 
 .section-title-fixed > .hide-ref-div
 {
@@ -227,6 +228,7 @@ text-align: right;
 }
 
 .section-title > a {
+    white-space: nowrap;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -235,6 +237,7 @@ text-align: right;
     padding-left: 0.3em;
     transition: background-color 0.3s ease; 
 }
+
 .section-title > a:hover {
     background-color: #007bff; 
 }
@@ -244,9 +247,8 @@ background-color: #0056b3; /* Darker shade or different color on hover */
 
 .section-title-fixed > h1 
 {
-width:100vw;
-padding-left:2vw ;
-padding-right:47vw ;
+width:750pt;
+padding-right:4vw ;
 text-align: right;
 }
 
@@ -334,18 +336,12 @@ display: inline-block;
 
 /* Icons */
 
-.icon 
-{
-width:3em;
-position: relative;
-text-decoration: none;
-}
-
 .icon:before {
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
 display: inline-block;
-font-size: 1.5em;
+width:2em;
+font-size: 2em;
 font-style: normal;
 font-variant: normal;
 text-rendering: auto;
@@ -354,10 +350,11 @@ font-family: 'Font Awesome 5 Free';
 font-weight: 900;
 line-height: inherit;
 }
-
-.icon.solid:before {
-font-weight: 900;
+.icon2:before {
+width:1.75em;
+font-size: 1em;
 }
+
 
 /* Nav */
 #nav 
@@ -382,38 +379,30 @@ display: inline;
 }
 
 #nav a {
-position: relative;
-display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    height: 1.25em;
 width: 100%;
 height: 1em;
-font-size: 2em;
-margin: 0em 0em 2em 0em;
+font-size: 1.5em;
+margin: 0em 0em 2.5em 0em;
 opacity: 0.35;
 outline: 0;
-text-align: left;
+text-align: center;
 -moz-transition: opacity .25s ease-in-out;
 -webkit-transition: opacity .25s ease-in-out;
 -ms-transition: opacity .25s ease-in-out;
 transition: opacity .25s ease-in-out;
 }
 
-#nav a > p {
-text-align: left;
-font-size: 0.5em;
-padding-left:4em;
-font-weight: 900;
-transform: translateY(-2em);
-}
-
-#nav p:hover  
-{
-cursor: pointer;
-}
 
 
 #nav a:hover  
 {
 opacity: 1.0;
+cursor: pointer;
 }
 
 #nav a.ref0{
@@ -500,7 +489,7 @@ transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 transition: opacity 0.25s ease-in-out;
 position: relative;
 padding: 4vh 2vw 4vh 2vw;
-width: 50em;
+width: 750pt;
 }
 
 
@@ -589,7 +578,7 @@ margin-bottom: 0;
 
 #main > .panel header p 
 {
-letter-spacing: -0.015em;
+letter-spacing: -0.02em;
 line-height: 1.5em;
 font-size: 16pt;
 margin: 1.5em 0 0 0;
