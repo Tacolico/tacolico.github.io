@@ -363,7 +363,7 @@ background-color:#FF5200;
 width:20vw; 
 height:100%;
 justify-content: flex-start;
-align-items: center;
+align-items: left;
 text-align: left;
 flex-direction: column;
 padding-top: 5.5vh;
