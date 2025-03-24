@@ -57,37 +57,6 @@ font-size: 15pt;
 line-height: 1.5em;
 }
 
-@media screen and (max-width: 1680px) 
-{
-body, input, textarea, select 
-{
-font-size: 14pt;
-}
-}
-
-@media screen and (max-width: 1280px) 
-{
-body, input, textarea, select 
-{
-font-size: 13pt;
-}
-}
-
-@media screen and (max-width: 736px) 
-{
-body, input, textarea, select 
-{
-font-size: 12pt;
-}
-}
-@media screen and (max-width: 360px)
-{
-body, input, textarea, select 
-{
-font-size: 11pt;
-}
-}
-
 h1, h2, h3, h4, h5, h6, a, p
 {
 text-align: justify;
@@ -118,23 +87,7 @@ font-size: 1.25em;
 letter-spacing: -0.015em;
 }
 
-@media screen and (max-width: 736px) 
-{
-h1, a
-{
-font-size: 1.75em;
-}
 
-h2 
-{
-font-size: 1.375em;
-}
-
-h3, h4, h5, h6 
-{
-font-size: 1em;
-}
-}
 
 p 
 {
@@ -170,18 +123,11 @@ margin: 0 0 0 0;
 font-weight: 400;
 }
 
-@media screen and (max-width: 736px) 
-{
-header 
-{
-margin: 0 0 1em 0;
-}
-}
-
 /* Title container */
 
 .section-title
 {
+width:100vw;
 display: flex;
 background-color:#FF5200; 
 align-items: center;
@@ -191,40 +137,19 @@ position: relative;
 padding-left:2vw ;
 }
 
+.section-title.sub {
+}
+
 .section-title.posfixed
 {
 position: fixed;
 z-index:700; 
 }
 
-.section-title.sub > h1
-{
-width:750pt;
-padding-right:4vw ;
-text-align: right;
-}
-
-.section-title-fixed
-{
-width:80vw;
-display: flex;
-background-color:#FF5200; 
-align-items: center;
-flex-wrap: nowrap;
-height: 3em;
+.fixed {
 position: fixed;
 opacity:0;
-padding-left:2vw;
-}
-
-
-
-.section-title-fixed > .hide-ref-div
-{
-width:100vw;
-padding-left:2vw ;
-padding-right:46vw ;
-text-align: right;
+margin-top:3em;
 }
 
 .section-title > a {
@@ -238,19 +163,15 @@ text-align: right;
     transition: background-color 0.3s ease; 
 }
 
-.section-title > a:hover {
-    background-color: #007bff; 
-}
-.section-title-fixed > .hide-ref-div > a:hover {
-background-color: #0056b3; /* Darker shade or different color on hover */
+.section-title.sub > a:hover {
+    background-color: #FF5200; 
 }
 
-.section-title-fixed > h1 
-{
-width:750pt;
-padding-right:4vw ;
-text-align: right;
+
+.section-title > a:hover {
+    background-color: #007BFF; 
 }
+
 
 .section-title.sub.one {
 }
@@ -261,17 +182,17 @@ text-align: right;
 .section-title.sub.four {
 }
 
-.section-title-fixed.oone {
+.section-title.fixed.oone {
 z-index:699;
 opacity:1;
 }
-.section-title-fixed.ttwo {
+.section-title.fixed.ttwo {
 z-index:602;
 }
-.section-title-fixed.tthree {
+.section-title.fixed.tthree {
 z-index:603;
 }
-.section-title-fixed.ffour {
+.section-title.fixed.ffour {
 z-index:604;
 }
 
@@ -413,12 +334,6 @@ opacity: 1.0;
     opacity:0.35;
 }
 
-@media screen and (max-width: 980px) {
-#nav  
-{
-display: none;
-}
-}
 /* Wrapper 
  * */
 
@@ -448,13 +363,6 @@ justify-content: center;
 -webkit-transition: opacity 1s ease-in-out;
 -ms-transition: opacity 1s ease-in-out;
 transition: opacity 1s ease-in-out;
-}
-
-@media screen and (max-width: 980px) {
-#wrapper {
-margin-left: 0;
-width: 100vw;
-}
 }
 
 /* Main 
@@ -574,65 +482,8 @@ font-size: 16pt;
 margin: 1.5em 0 0 0;
 }
 
-
-@media screen and (max-width: 980px) {
-.img-fluid-vid-por {
-width:100%;
-}
-.img-fluid-por {
-width:100%;
-}
-.section-title-fixed.oone > .hide-ref-div {
-padding-right:0vw;
-}
-
-#main > .panel.text {
-padding: 4vh 2vw 4vh 2vw;
-}
-
-#main > .panel {
-width: 100%;
-padding: 4vh 0 4vh 0;
-}
-
-.section-title-fixed > a {
-padding-right:3.5vw;
-}
-.section-title-fixed > h1 {
-padding-right:3.5vw;
-
-}
-.section-title.sub > a {
-padding-right:0vw;
-}
-.section-title.sub > h1 {
-padding-right:0vw;
-}
-#main > .panel header {
-padding: 0vh 2vw 0vh 2vw;
-text-align: left;
-}
-
-#main > .panel.intro {
--moz-flex-direction: column;
--webkit-flex-direction: column;
--ms-flex-direction: column;
-flex-direction: column;
-height: auto;
-}
-
-#main > .panel.intro .pic {
-height: calc(100vw * 3 / 2);
-width: 100%;
-}
-
-#main > .panel.intro .pic img {
-max-height: 100%;
-}
-
-#main > .panel.intro header {
-padding: 4vh 2vw 4vh 2vw;
-text-align: left;
-}
-
-}
+@import url("main_resize_360.css");
+@import url("main_resize_736.css");
+@import url("main_resize_980.css");
+@import url("main_resize_1280.css");
+@import url("main_resize_1680.css");

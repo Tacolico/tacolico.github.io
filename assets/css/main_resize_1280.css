@@ -1,0 +1,7 @@
+@media screen and (max-width: 1280px) 
+{
+body, input, textarea, select 
+{
+font-size: 13pt;
+}
+}

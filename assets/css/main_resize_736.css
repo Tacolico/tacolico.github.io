@@ -1,0 +1,17 @@
+@media screen and (max-width: 736px) {
+h1, a {
+font-size: 1.75em;
+}
+h2 {
+font-size: 1.375em;
+}
+h3, h4, h5, h6 {
+font-size: 1em;
+}
+header {
+margin: 0 0 1em 0;
+}
+body, input, textarea, select {
+font-size: 12pt;
+}
+}

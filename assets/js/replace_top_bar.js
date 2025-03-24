@@ -1,5 +1,4 @@
 window.onscroll = function() {
-  stickyFunction(blockOne, 'stickyIndex',positionTwo);
   stickyFunction(blockTwo, 'sticky',positionTwo);
   stickyFunction(blockThree, 'sticky',positionThree);
   stickyFunction(blockFour, 'sticky',positionFour);
@@ -15,15 +14,14 @@ var IndexTwo = document.querySelector('#nav a.ref1');
 var IndexThree = document.querySelector('#nav a.ref2');
 var IndexFour = document.querySelector('#nav .ref3');
 
-var blockOne = document.querySelector('.section-title-fixed.oone');
 
-var blockTwo = document.querySelector('.section-title-fixed.ttwo');
+var blockTwo = document.querySelector('.section-title.fixed.ttwo');
 var positionTwo = document.querySelector('.section-title.sub.two');
 
-var blockThree = document.querySelector('.section-title-fixed.tthree');
+var blockThree = document.querySelector('.section-title.fixed.tthree');
 var positionThree = document.querySelector('.section-title.sub.three');
 
-var blockFour = document.querySelector('.section-title-fixed.ffour');
+var blockFour = document.querySelector('.section-title.fixed.ffour');
 var positionFour = document.querySelector('.section-title.sub.four');
 
 function stickyFunction(element, className, pospos) {
