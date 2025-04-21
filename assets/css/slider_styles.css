@@ -3,7 +3,6 @@
 .slideshow-container img {
     width:100%;
     border: 8px solid #FF5200; 
-    padding: 8px;
 }
 .invert img {
     border: 8px solid #00ADFF; 
