@@ -1,18 +1,15 @@
 window.onscroll = function() {
   stickyFunction(blockTwo, 'sticky',positionTwo);
   stickyFunction(blockThree, 'sticky',positionThree);
-  stickyFunction(blockFour, 'sticky',positionFour);
 
-  stickyFunctionIndex(IndexTwo, 'ref',positionTwo,positionThree);
-  stickyFunctionIndex(IndexThree, 'ref',positionThree,positionFour);
-  stickyFunction(IndexFour, 'ref',positionFour);
   stickyFunction(IndexOne, 'refIndex',positionTwo);
+  stickyFunctionIndex(IndexTwo, 'ref',positionTwo,positionThree);
+  stickyFunction(IndexThree, 'ref',positionThree);
 };
 
 var IndexOne = document.querySelector('#nav a.ref0');
 var IndexTwo = document.querySelector('#nav a.ref1');
 var IndexThree = document.querySelector('#nav a.ref2');
-var IndexFour = document.querySelector('#nav .ref3');
 
 
 var blockTwo = document.querySelector('.section-title.fixed.ttwo');
