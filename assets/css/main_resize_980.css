@@ -1,9 +1,15 @@
 @media screen and (max-width: 980px) {
 
 #main > .panel header p {
-    font-size: 1em;
+    font-size: 0.7em;
+}
+#main > .panel header h1 {
+    font-size: 1.3em;
 }
 
+#main > .panel header h2 {
+    font-size: 1.2em;
+}
     #nav {
     display: none;
     }

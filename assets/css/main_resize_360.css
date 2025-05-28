@@ -1,5 +1,4 @@
-@media screen and (max-width: 360px)
-{
+@media screen and (max-width: 360px){
 body, input, textarea, select 
 {
 font-size: 11pt;

@@ -1,8 +1,4 @@
 @media screen and (max-width: 1280px) {
-#main > .panel header p {
-    font-size: 1em;
-}
-
 body, input, textarea, select 
 {
 font-size: 13pt;
