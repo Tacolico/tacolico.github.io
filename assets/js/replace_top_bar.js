@@ -4,12 +4,14 @@ window.onscroll = function() {
 
   stickyFunction(IndexOne, 'refIndex',positionTwo);
   stickyFunctionIndex(IndexTwo, 'ref',positionTwo,positionThree);
-  stickyFunction(IndexThree, 'ref',positionThree);
+  stickyFunctionIndex(IndexThree, 'ref',positionThree,positionFour);
+  stickyFunction(IndexFour, 'ref',positionFour);
 };
 
 var IndexOne = document.querySelector('#nav a.ref0');
 var IndexTwo = document.querySelector('#nav a.ref1');
 var IndexThree = document.querySelector('#nav a.ref2');
+var IndexFour = document.querySelector('#nav a.ref3');
 
 
 var blockTwo = document.querySelector('.section-title.fixed.ttwo');

@@ -1,5 +1,9 @@
 @media screen and (max-width: 980px) {
 
+#main > .panel header p {
+    font-size: 1em;
+}
+
     #nav {
     display: none;
     }

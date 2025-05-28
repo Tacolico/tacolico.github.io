@@ -20,6 +20,7 @@
 <a onclick="scrollToSection('home')"    class="ref0 icon fa-user">Presentación</a>
 <a onclick="scrollToSection('videos')"  class="ref1 icon fa-image">Minería</a>    
 <a onclick="scrollToSection('work')"    class="ref2 icon fa-toolbox">Mecánica</a>   
+<a onclick="scrollToSection('work3')"    class="ref3 icon fa-sun">Energía</a>   
 </nav>
 
 <!-- Wrapper-->
@@ -34,6 +35,7 @@
 
 <div class="section-title fixed ttwo  "><a class="icon icon2 fa-image">Minería</a></div>
 <div class="section-title fixed tthree"><a class="icon icon2 fa-toolbox">Mecánica</a></div>
+<div class="section-title fixed ffour"><a class="icon icon2 fa-toolbox">Energía</a></div>
 
 
 
@@ -65,7 +67,7 @@ Se pueden descargar mis antecedentes en el siguiente enlace:
 </div>
 <section class="panel" >
 
-<div class="color-box"><header><h2>Producción de cobre en Chile</h2></header></div>
+<div class="color-box"><header><h2>Producción de cobre</h2></header></div>
 <div class="slideshow-container">
 <div class="mySlides fade mySlides1 invert"><img src="images/toneladas_cobre_persona.webp"></div>
 <div class="mySlides fade mySlides1 invert"><img src="images/toneladas_cobre_año.webp" ></div>
@@ -81,14 +83,11 @@ Se pueden descargar mis antecedentes en el siguiente enlace:
 <header>
 <p>
 Producción promedio por trabajador (contratistas + trabajadores) en distintas mineras de gran escala, considerando cobre en cátodos y concentrado de cobre. Un trabajador produce entre 25 y 100 toneladas al año de cobre, variando debido a la existencia de proyectos de expansión, falta de mineral o huelgas de trabajadores.
-</p>
-<p>
+</p><p>
 Se presenta esta gráfica para comparar el rendimiento al ignorar la producción total de las mineras, esperando encontrar indicios de un uso más efectivo de los recursos disponibles, como personas, maquinaria, permisos, etc. 
-</p>
-<p>
+</p><p>
 Las datos fueron obtenidos en las memorias anuales encontradas en:
-</p>
-<p>
+<br>
 https://www.cmfchile.cl/portal/principal/613/w3-propertyname-815.html
 </p>
 </header>
@@ -131,11 +130,9 @@ En particular la industria del cobre tiene una tendencia a disminuir las gananci
 </p>
 <p>
 Precio observado de distintos metales en Chile, datos obtenidos en:
-</p>
-<p>
+<br>
 https://www.cochilco.cl/web/historico-precio-de-los-metales/
-</p>
-<p>
+<br>
 https://si3.bcentral.cl/indicadoressiete/secure/IndicadoresDiarios.aspx
 </p>
 </header>
@@ -158,19 +155,62 @@ https://si3.bcentral.cl/indicadoressiete/secure/IndicadoresDiarios.aspx
 <header>
 <p>
 El mantenimiento predictivo de máquinas permite preparar repuestos, permisos y mano de obra antes de una falla, reduciendo los tiempos fuera de servicio después de una falla.
-</p>
-<p>
+</p><p>
 Uno de los métodos más comunes para predecir fallas es el análisis de vibraciones, junto con termografía y análisis visual.
-</p>
-<p>
+</p><p>
 Este video presenta los conceptos básicos de la evaluación de vibraciones.
-</p>
-<p>
+</p><p>
 En la mayoría de los casos, estas evaluaciones se realizan por medio de computadoras de manera automática, pero saber nunca está de más. 🤗
 </p>
 </header>
 
+</section>
+<!-- Videos -->
+<div id="videos" class="section-title sub four">
+<a class="icon icon2 fa-sun">Energía</a> 
+</div>
+<section class="panel" >
 
+
+<div class="color-box"><header><h2>Precio histórico de metales</h2></header></div>
+<div class="slideshow-container">
+<div class="mySlides fade mySlides4 invert"><img src="images/panel_solar/Annual_energy.webp" ></div>
+<div class="mySlides fade mySlides4 invert"><img src="images/panel_solar/Daily_energy_Norte_30.webp" ></div>
+<div class="mySlides fade mySlides4 invert"><img src="images/panel_solar/Daily_energy_Este_30.webp" ></div>
+<div class="mySlides fade mySlides4 invert"><img src="images/panel_solar/Daily_energy_Oeste_30.webp" ></div>
+<div class="mySlides fade mySlides4 invert"><img src="images/panel_solar/Daily_energy_Sur_30.webp" ></div>
+</div>
+<div class="dot_style">
+<div>
+<span class="dot dot4" onclick="currentSlide4(1)"></span>
+<span class="dot dot4" onclick="currentSlide4(2)"></span>
+<span class="dot dot4" onclick="currentSlide4(3)"></span>
+<span class="dot dot4" onclick="currentSlide4(4)"></span>
+<span class="dot dot4" onclick="currentSlide4(5)"></span>
+</div>
+<div><a class="next" onclick="plusSlides4(1)">&#10095;</a></div>
+</div> 
+<header>
+    <p>
+    Resumen:<br>
+Considerando la rotación de la Tierra, al colocar un panel en un techo norte inclinado 30 grados, se puede obtener un 50% más de energía que al colocarlo en el techo este u oeste. Para una casa con consumo promedio de 20 kWh/mes, esto puede significar un panel solar menos.
+    </p><p>
+    Desarrollo:<br>
+Al momento de adquirir paneles solares, es necesario estimar cuánta energía puede obtenerse de un panel solar para comparar con la energía requerida.
+Las estimaciones pueden simplificarse y se pueden agregar factores que corrijan la energía estimada por panel solar, pero también se puede realizar un análisis más detallado que indique, por ejemplo, dónde colocar los paneles en el techo de una casa.
+    </p><p>
+Al colocar un panel solar se puede intuir que tiene que apuntar al sol, en La Serena esto significa colocarlos en el techo norte de una casa.
+    </p><p>
+Considerando la rotación de la Tierra, al colocar un panel en un techo norte inclinado 30 grados, se puede obtener un 50% más de energía que al colocarlo en el techo este u oeste. Para una casa con consumo promedio de 20 kWh/mes, esto puede significar un panel solar menos.
+    </p><p>
+Los gráficos presentados muestran cuánto varía la energía solar en un metro cuadrado de panel solar colocado en el techo de una casa en La Serena, considerando una inclinación de 30 grados y las posiciones NSEO del techo. Además, se muestra el consumo promedio de una casa. En base a este gráfico, se busca que las curvas estén por encima de la línea negra al multiplicar por 1, 2, 3, etc., indicando la cantidad de paneles solares necesarios según el número usado para multiplicar.
+    </p><p>
+Análisis basado en las ecuaciones mostradas en el libro:
+    <br>
+- Renewable Energy Resources, chapter 2, John Twidell.
+    </p>
+
+</header>
 
 
 </section>
@@ -181,6 +221,7 @@ En la mayoría de los casos, estas evaluaciones se realizan por medio de computa
 <script src="assets/js/slider_script1.js"></script>
 <script src="assets/js/slider_script2.js"></script>
 <script src="assets/js/slider_script3.js"></script>
+<script src="assets/js/slider_script4.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
