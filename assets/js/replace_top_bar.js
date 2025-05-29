@@ -1,6 +1,7 @@
 window.onscroll = function() {
   stickyFunction(blockTwo, 'sticky',positionTwo);
   stickyFunction(blockThree, 'sticky',positionThree);
+  stickyFunction(blockFour, 'sticky',positionFour);
 
   stickyFunction(IndexOne, 'refIndex',positionTwo);
   stickyFunctionIndex(IndexTwo, 'ref',positionTwo,positionThree);
